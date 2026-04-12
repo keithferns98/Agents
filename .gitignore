@@ -1,0 +1,77 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# =========================
+# Jupyter / Notebooks
+# =========================
+.ipynb_checkpoints
+
+# =========================
+# Logs & runtime
+# =========================
+*.log
+logs/
+*.out
+*.err
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+*.env
+
+
+
+# =========================
+# IDEs
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Build / packaging
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+
+# =========================
+# Test / coverage
+# =========================
+.coverage
+htmlcov/
+.pytest_cache/
+
+# =========================
+# LangChain / LLM specific
+# =========================
+lc_cache/
+
+# =========================
+# Caches
+# =========================
+.cache/
+.huggingface/
+transformers_cache/
+__pypackages__/
+
