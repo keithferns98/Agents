@@ -75,3 +75,5 @@ lc_cache/
 transformers_cache/
 __pypackages__/
 
+*.mp4
+videos/
