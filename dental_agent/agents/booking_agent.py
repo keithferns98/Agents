@@ -2,7 +2,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langgraph.prebuilt import ToolNode
 # from dental_agent.config.settings import
 from dental_agent.models.state import AppointmentState
-from dental_agent.utils import santize_messages
+from dental_agent.utils import sanitize_messages
 from dental_agent.tools.csv_reader import get_available_slots, check_slot_availability
 from dental_agent.tools.csv_writer import book_appointment
 import os
@@ -40,7 +40,7 @@ BOOKING_PROMPT = ChatPromptTemplate.from_messages([
     ("placeholder", "{messages}"),
 ])
 
-banking_tool_node = ToolNode(tools = BOOKING_TOOLS)
+booking_tool_node = ToolNode(tools = BOOKING_TOOLS)
 
 def booking_agent_node(state: AppointmentState)-> dict:
     llm =  init_chat_model(

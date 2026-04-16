@@ -16,7 +16,16 @@ async def get_available_slots(
     date_filter: str = "",
 ) -> List[Dict]:
     """
-    Fetch available appointment slots from DB
+    Return available (is_available=TRUE) appointment slots.
+
+    Args:
+        specialization: Filter by specialization, e.g. 'orthodontist'. Leave empty to skip.
+        doctor_name: Filter by doctor name (case-insensitive), e.g. 'emily johnson'. Leave empty to skip.
+        date_filter: Filter by date string M/D/YYYY, e.g. '5/10/2026'. Leave empty to skip.
+
+    Returns:
+        List of dicts with keys: date_slot, specialization, doctor_name.
+        Returns at most 20 rows to keep response concise.
     """
 
     pool = Database.get_pool()
