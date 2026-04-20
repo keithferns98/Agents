@@ -1,0 +1,15 @@
+{
+    "mcpServers": {
+    "weather": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with",
+        "mcp[cli]",
+        "mcp",
+        "run",
+        "C:/Users/keith/implementations/Dental Appointment System/mcp_server_agents/server/weather.py"
+      ]
+    }
+  }
+}
